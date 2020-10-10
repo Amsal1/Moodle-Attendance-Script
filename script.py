@@ -19,8 +19,8 @@ driver.set_window_size(1920, 1080)              #Don't set it to very smaller si
 end=0
 try:
         while end==0:
-                if not driver.find_elements_by_xpath("//span[@class='userbutton']"):
-                        driver.get("https://ilizone.iul.ac.in/my/") #Your moodle website address
+                driver.get("https://ilizone.iul.ac.in/my/") #Your moodle website address
+                if not driver.find_elements_by_xpath("//span[@class='userbutton']"):    #For checking if logged in or not
                         driver.implicitly_wait(10)
                         username_textbox = driver.find_element_by_id("username")
                         username_textbox.send_keys(username)
