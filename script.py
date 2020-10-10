@@ -12,6 +12,8 @@ import sys
 
 
 #Edit your details here:
+print("Program is coded by a student")
+print("Github repo of this program: https://github.com/Amsal1/Moodle-Attendance-Script")
 username = sys.argv[1] or input("Enter in your username: ")
 password = sys.argv[2] or getpass("Enter your password: ")
 subject =  sys.argv[3] or input("Enter iul subject code(eg. CS311_A etc, make sure its exact like IUL): ")
@@ -20,8 +22,9 @@ driver = webdriver.Chrome(path)
 driver.set_window_size(1920, 1080)              #Don't set it to very smaller size or else some variables might not get detected
 
 end=0
-try:
-        while end==0:
+
+while end==0:
+        try:
                 driver.get("https://ilizone.iul.ac.in/my/") #Your moodle website address
                 if not driver.find_elements_by_xpath("//span[@class='userbutton']"):    #For checking if logged in or not
                         driver.implicitly_wait(10)
@@ -42,6 +45,6 @@ try:
                 driver.implicitly_wait(5)
                 driver.find_element_by_xpath("//input[@value='Save changes']").click()
                 driver.implicitly_wait(5)
-
-except NoSuchElementException:
-        end=0
+                end=1
+        except NoSuchElementException:
+                end=0
