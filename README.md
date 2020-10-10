@@ -1,5 +1,5 @@
 # Moodle-Attendance-Script
-My college uses Moodle CMS for its online educational platform so my friend suggested to make a script which could submit the attendence itself. Repository is protected with GNU GPL v3.0 License.
+My college uses Moodle CMS for its online educational platform so my friend suggested to make a script which could submit the attendence itself. Repository is licensed under GNU GPL v3.0 License.
 
 # Requirements
 1. Download and Install [Chrome](https://www.google.com/intl/en_in/chrome)
