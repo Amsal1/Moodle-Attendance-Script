@@ -13,7 +13,7 @@ import sys
 
 #Edit your details here:
 
-print("Program is coded by a student and idea was given by my friend.")
+print("Program is coded by a student of CSE-2 and idea was given by my friend. CSE-2 2022 Passout Rocks!")
 print("Github repo of this program: https://github.com/Amsal1/Moodle-Attendance-Script")
 if len(sys.argv) > 1:
         username = sys.argv[1]
