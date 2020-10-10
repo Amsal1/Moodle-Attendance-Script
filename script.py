@@ -61,4 +61,5 @@ while end==0:
                 end=1
         except NoSuchElementException:
                 end=0
-exit()
+driver.quit()
+quit()
