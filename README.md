@@ -11,3 +11,10 @@ My college uses Moodle CMS for its online educational platform so my friend sugg
 2. Edit the Chrome webdriver path and save script.py
 3. Execute python script.py
 4. Enjoy :)
+
+# Important
+This program uses left navigation bar of ILI to traverse the subjects. 
+It might be possible that some of the subject aren't visible to the left navigation bar so it won't be able to visit and mark attendence for those subject.
+Example shown as below where I have CS301_A but it doesn't shows on my navigation panel.
+
+![N|Solid](https://i.imgur.com/OWgXyzdl.png)
