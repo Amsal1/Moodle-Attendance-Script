@@ -28,7 +28,7 @@ rem )
 if %hour% EQU 10 (
 	if %min% EQU 31	(
 		if %DOW% EQU 1 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS304_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS304_B
 		)
 	)
 )
@@ -36,7 +36,7 @@ if %hour% EQU 10 (
 if %hour% EQU 12 (
 	if %min% EQU 1	(
 		if %DOW% EQU 1 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS303_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS303_A
 		)
 	)
 )
@@ -44,7 +44,7 @@ if %hour% EQU 12 (
 if %hour% EQU 16 (
 	if %min% EQU 31	(
 		if %DOW% EQU 1 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CD35E_CSE1,2,3,Dual
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CD35E_CSE1,2,3,Dual
 		)
 	)
 )
@@ -54,7 +54,7 @@ rem Tuesday Schedule
 if %hour% EQU 9 (
 	if %min% EQU 1	(
 		if %DOW% EQU 2 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS305_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS305_B
 		)
 	)
 )
@@ -62,7 +62,7 @@ if %hour% EQU 9 (
 if %hour% EQU 10 (
 	if %min% EQU 31	(
 		if %DOW% EQU 2 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS309_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS309_A
 		)
 	)
 )
@@ -70,7 +70,7 @@ if %hour% EQU 10 (
 if %hour% EQU 12 (
 	if %min% EQU 1	(
 		if %DOW% EQU 2 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS311_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS311_A
 		)
 	)
 )
@@ -86,7 +86,7 @@ rem )
 if %hour% EQU 16 (
 	if %min% EQU 31	(
 		if %DOW% EQU 2 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CD35E_CSE1,2,3,Dual
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CD35E_CSE1,2,3,Dual
 		)
 	)
 )
@@ -103,7 +103,7 @@ rem )
 if %hour% EQU 10 (
 	if %min% EQU 31	(
 		if %DOW% EQU 3 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS304_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS304_B
 		)
 	)
 )
@@ -111,7 +111,7 @@ if %hour% EQU 10 (
 if %hour% EQU 12 (
 	if %min% EQU 1	(
 		if %DOW% EQU 3 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS303_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS303_A
 		)
 	)
 )
@@ -119,7 +119,7 @@ if %hour% EQU 12 (
 if %hour% EQU 14 (
 	if %min% EQU 1	(
 		if %DOW% EQU 3 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS310_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS310_A
 		)
 	)
 )
@@ -128,7 +128,7 @@ rem Thursday Schedule
 if %hour% EQU 9 (
 	if %min% EQU 1	(
 		if %DOW% EQU 4 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS305_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS305_B
 		)
 	)
 )
@@ -136,7 +136,7 @@ if %hour% EQU 9 (
 if %hour% EQU 10 (
 	if %min% EQU 31	(
 		if %DOW% EQU 4 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS309_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS309_A
 		)
 	)
 )
@@ -144,7 +144,7 @@ if %hour% EQU 10 (
 if %hour% EQU 12 (
 	if %min% EQU 1	(
 		if %DOW% EQU 4 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS311_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS311_A
 		)
 	)
 )
@@ -152,7 +152,7 @@ if %hour% EQU 12 (
 if %hour% EQU 14 (
 	if %min% EQU 1	(
 		if %DOW% EQU 4 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS302_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS302_B
 		)
 	)
 )
@@ -169,7 +169,7 @@ rem )
 if %hour% EQU 10 (
 	if %min% EQU 31	(
 		if %DOW% EQU 5 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS304_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS304_B
 		)
 	)
 )
@@ -177,7 +177,7 @@ if %hour% EQU 10 (
 if %hour% EQU 12 (
 	if %min% EQU 1	(
 		if %DOW% EQU 5 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS303_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS303_A
 		)
 	)
 )
@@ -185,7 +185,7 @@ if %hour% EQU 12 (
 if %hour% EQU 14 (
 	if %min% EQU 1	(
 		if %DOW% EQU 5 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS306_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS306_B
 		)
 	)
 )
@@ -194,7 +194,7 @@ rem Saturday Schedule
 if %hour% EQU 9 (
 	if %min% EQU 1	(
 		if %DOW% EQU 5 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS305_B
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS305_B
 		)
 	)
 )
@@ -202,7 +202,7 @@ if %hour% EQU 9 (
 if %hour% EQU 10 (
 	if %min% EQU 31	(
 		if %DOW% EQU 5 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS309_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS309_A
 		)
 	)
 )
@@ -210,7 +210,7 @@ if %hour% EQU 10 (
 if %hour% EQU 12 (
 	if %min% EQU 1	(
 		if %DOW% EQU 5 (
-		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS311_A
+		start "" /W "AACS_ILI.exe" %enroll% %pass% CS311_A
 		)
 	)
 )
