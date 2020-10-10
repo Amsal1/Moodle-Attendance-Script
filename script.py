@@ -12,6 +12,7 @@ import sys
 
 
 #Edit your details here:
+
 print("Program is coded by a student and idea was given by my friend.")
 print("Github repo of this program: https://github.com/Amsal1/Moodle-Attendance-Script")
 if len(sys.argv) > 1:
@@ -19,6 +20,7 @@ if len(sys.argv) > 1:
         password = sys.argv[2]
         subject =  sys.argv[3]
 else:
+        print("You can also pass commandline arguments with AACS_ILI in this way: AACS_ILI.exe Username Password Subject_Code")
         username = input("Enter in your username: ")
         password = getpass("Enter your password: ")
         subject =  input("Enter 1 ILI Subject Code(eg. CS311_A,CS309_B..., make sure your enter exactly like mentioned in ILI): ")
