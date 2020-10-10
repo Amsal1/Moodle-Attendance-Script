@@ -12,11 +12,16 @@ import sys
 
 
 #Edit your details here:
-print("Program is coded by a student")
+print("Program is coded by a student and idea was given by my friend.")
 print("Github repo of this program: https://github.com/Amsal1/Moodle-Attendance-Script")
-username = sys.argv[1] or input("Enter in your username: ")
-password = sys.argv[2] or getpass("Enter your password: ")
-subject =  sys.argv[3] or input("Enter iul subject code(eg. CS311_A etc, make sure its exact like IUL): ")
+if len(sys.argv) > 1:
+        username = sys.argv[1] or input("Enter in your username: ")
+        password = sys.argv[2] or getpass("Enter your password: ")
+        subject =  sys.argv[3] or input("Enter iul subject code(eg. CS311_A etc, make sure its exact like IUL): ")
+else
+        username = input("Enter in your username: ")
+        password = getpass("Enter your password: ")
+        subject =  input("Enter iul subject code(eg. CS311_A etc, make sure its exact like IUL): ")
 path = "chromedriver.exe"       
 driver = webdriver.Chrome(path)
 driver.set_window_size(1920, 1080)              #Don't set it to very smaller size or else some variables might not get detected
