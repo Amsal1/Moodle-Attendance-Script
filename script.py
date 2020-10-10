@@ -12,9 +12,9 @@ import sys
 
 
 #Edit your details here:
-username = input("Enter in your username: ") or sys.argv[0]
-password = getpass("Enter your password: ") or sys.argv[1]
-subject = input("Enter iul subject code(eg. CS311_A etc, make sure its exact like IUL): ") or sys.argv[2]
+username = sys.argv[1] or input("Enter in your username: ")
+password = sys.argv[2] or getpass("Enter your password: ")
+subject =  sys.argv[3] or input("Enter iul subject code(eg. CS311_A etc, make sure its exact like IUL): ")
 path = "chromedriver.exe"       
 driver = webdriver.Chrome(path)
 driver.set_window_size(1920, 1080)              #Don't set it to very smaller size or else some variables might not get detected
