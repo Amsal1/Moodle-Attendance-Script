@@ -29,7 +29,7 @@ try:
                         login_button = driver.find_element_by_id("loginbtn")
                         login_button.submit()
                 driver.implicitly_wait(10)
-                driver.find_element_by_link_text("CS309_A").click()
+                driver.find_element_by_link_text("CS311_A").click()
                 driver.implicitly_wait(10)
                 driver.find_element_by_link_text("Attendance").click()
                 driver.implicitly_wait(10)
@@ -39,7 +39,6 @@ try:
                 driver.implicitly_wait(5)
                 driver.find_element_by_xpath("//input[@value='Save changes']").click()
                 driver.implicitly_wait(5)
-                logged=driver.find_element_by_xpath("//span[@class='userbutton']")
 
 except NoSuchElementException:
         end=0
