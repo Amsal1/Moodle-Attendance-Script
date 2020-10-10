@@ -8,12 +8,15 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
+import sys
 
 
 #Edit your details here:
-username = input("Enter in your username: ")
-password = getpass("Enter your password: ")           
-driver = webdriver.Chrome("C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
+username = input("Enter in your username: ") or sys.argv[0]
+password = getpass("Enter your password: ") or sys.argv[1]
+subject = input("Enter iul subject code(eg. CS311_A etc, make sure its exact like IUL): ") or sys.argv[2]
+path = "chromedriver.exe"       
+driver = webdriver.Chrome(path)
 driver.set_window_size(1920, 1080)              #Don't set it to very smaller size or else some variables might not get detected
 
 end=0
@@ -29,7 +32,7 @@ try:
                         login_button = driver.find_element_by_id("loginbtn")
                         login_button.submit()
                 driver.implicitly_wait(10)
-                driver.find_element_by_link_text("CS311_A").click()
+                driver.find_element_by_link_text(subject).click()
                 driver.implicitly_wait(10)
                 driver.find_element_by_link_text("Attendance").click()
                 driver.implicitly_wait(10)
