@@ -8,6 +8,6 @@ My college uses Moodle CMS for its online educational platform so my friend sugg
 
 # How-To
 1. Edit and enter your username and password in script.py
-2. Edit the Chrome/FireFox webdriver path and save script.py
+2. Edit the Chrome webdriver path and save script.py
 3. Execute python script.py
 4. Enjoy :)
