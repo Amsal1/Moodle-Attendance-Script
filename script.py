@@ -15,18 +15,24 @@ import sys
 
 print("Program is coded by a student of CSE-2 and idea was given by my friend. CSE 2022 Passout Rocks!")
 print("Github repo of this program: https://github.com/Amsal1/Moodle-Attendance-Script")
+w = 1920
+h = 1080
 if len(sys.argv) > 1:
         username = sys.argv[1]
         password = sys.argv[2]
         subject =  sys.argv[3]
+        if len(sys.argv) > 4:
+                w = sys.argv[4]                 #width of chrome window
+                h = sys.argv[5]                 #height of chrome window
 else:
         print("You can also pass commandline arguments with AACS_ILI in this way: AACS_ILI.exe Username Password Subject_Code")
+        print("Optionally you can pass chrome window size in commandline arguments with AACS_ILI in this way: AACS_ILI.exe Username Password Subject_Code 1920 1080")
         username = input("Enter in your username: ")
         password = getpass("Enter your password: ")
         subject =  input("Enter 1 ILI Subject Code(eg. CS311_A,CS309_B..., make sure your enter exactly like mentioned in ILI): ")
 path = "chromedriver.exe"       
 driver = webdriver.Chrome(path)
-driver.set_window_size(1920, 1080)              #Don't set it to very smaller size or else some variables might not get detected
+driver.set_window_size(w, h)              #Don't set it to very smaller size or else some variables might not get detected
 
 end=0
 
