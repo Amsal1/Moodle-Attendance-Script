@@ -47,6 +47,10 @@ end=0
 while end==0:
         try:
                 driver.get("https://ilizone.iul.ac.in/my/")     #Your moodle website address
+                t2=time.perf_counter()                          #time-now
+                if t2-t1 > tmain:                               #comment this 'if' you don't need timeout for your works...
+                        driver.quit()                           #
+                        quit()                                  #
                 driver.implicitly_wait(20)
                 if not driver.find_elements_by_xpath("//span[@class='userbutton']"):    #For checking if logged in or not
                         username_textbox = driver.find_element_by_id("username")
@@ -55,10 +59,6 @@ while end==0:
                         password_textbox.send_keys(password)
                         login_button = driver.find_element_by_id("loginbtn")
                         login_button.submit()
-                t2=time.perf_counter()                          #time-now
-                if t2-t1 > tmain:                               #comment this 'if' you don't need timeout for your works...
-                        driver.quit()                           #
-                        quit()                                  #
                 driver.find_element_by_link_text(subject).click()
                 driver.find_element_by_link_text("Attendance").click()
                 driver.find_element_by_link_text("Submit attendance").click()
