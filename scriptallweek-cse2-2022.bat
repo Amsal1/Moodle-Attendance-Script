@@ -6,8 +6,8 @@ rem CS301_B doesn't show in my left navigation panel so it can't be automated fo
 rem "rem" keyword is used for making the line comment. Some of the lines are commented which you can uncomment for your java subject. For opensource students, its already done :)
 rem Make sure to keep AACS_ILI.exe in the same folder
 rem Set your enrollment number
-set enroll=130903409
-set pass=asfsafdsaf
+set enroll=1800101253
+set pass=Amsal@123
 :check
 set hour=%time:~0,2%
 set min=%time:~3,2%
@@ -194,7 +194,7 @@ if %hour% EQU 14 (
 rem Saturday Schedule
 if %hour% EQU 9 (
 	if %min% EQU 1	(
-		if %DOW% EQU 5 (
+		if %DOW% EQU 6 (
 		start "" /W "AACS_ILI.exe" %enroll% %pass% CS305_B
 		)
 	)
@@ -202,7 +202,7 @@ if %hour% EQU 9 (
 
 if %hour% EQU 10 (
 	if %min% EQU 31	(
-		if %DOW% EQU 5 (
+		if %DOW% EQU 6 (
 		start "" /W "AACS_ILI.exe" %enroll% %pass% CS309_A
 		)
 	)
@@ -210,7 +210,7 @@ if %hour% EQU 10 (
 
 if %hour% EQU 12 (
 	if %min% EQU 1	(
-		if %DOW% EQU 5 (
+		if %DOW% EQU 6 (
 		start "" /W "AACS_ILI.exe" %enroll% %pass% CS311_A
 		)
 	)
