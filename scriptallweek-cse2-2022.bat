@@ -18,7 +18,7 @@ goto :comehere
 :comehere
 
 rem Monday Schedule
- if %hour% EQU 9 (
+if %hour% EQU 9 (
 	if %min% EQU 01	(
 		if %DOW% EQU 1 (
 		start "" /W "AACS_ILI.exe" %enroll% %pass% https://ilizone.iul.ac.in/course/view.php?id=3863
