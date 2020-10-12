@@ -11,6 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import sys
 import time
 
+from validator_collection import validators, checkers
 
 print("Program is coded by a student of CSE-2 and idea was given by my friend. CSE 2022 Passout Rocks!")
 print("")
@@ -37,7 +38,7 @@ else:
         print("")
         username = input("Enter in your username: ")
         password = getpass("Enter your password: ")
-        subject =  input("Enter 1 ILI Subject Code(eg. CS311_A,CS309_B..., make sure your enter exactly like mentioned in ILI): ")
+        subject =  input("Enter 1 ILI Subject Code(eg. CS311_A,CS309_B..., make sure your enter exactly like mentioned in ILI) OR You can enter the link of course page: ")
 path = "chromedriver.exe"       
 driver = webdriver.Chrome(path)
 driver.set_window_size(w, h)                                    #Don't set it to very smaller size or else some variables might not get detected
@@ -59,13 +60,21 @@ while end==0:
                         password_textbox.send_keys(password)
                         login_button = driver.find_element_by_id("loginbtn")
                         login_button.submit()
-                driver.find_element_by_link_text(subject).click()
-                driver.find_element_by_link_text("Attendance").click()
-                driver.find_element_by_link_text("Submit attendance").click()
-                #wait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//span[text()='Present']"))).click()
-                driver.find_element_by_xpath("//span[text()='Present']").click()
-                driver.find_element_by_xpath("//input[@value='Save changes']").click()
-                end=1
+                if(checkers.is_url(subject)):
+                        driver.get(subject)
+                        driver.find_element_by_link_text("Attendance").click()
+                        driver.find_element_by_link_text("Submit attendance").click()
+                        driver.find_element_by_xpath("//span[text()='Present']").click()
+                        driver.find_element_by_xpath("//input[@value='Save changes']").click()
+                        end=1
+                else:
+                        driver.find_element_by_link_text(subject).click()
+                        driver.find_element_by_link_text("Attendance").click()
+                        driver.find_element_by_link_text("Submit attendance").click()
+                        #wait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//span[text()='Present']"))).click()
+                        driver.find_element_by_xpath("//span[text()='Present']").click()
+                        driver.find_element_by_xpath("//input[@value='Save changes']").click()
+                        end=1
         except NoSuchElementException:
                 end=0
 driver.quit()

@@ -194,7 +194,7 @@ if %hour% EQU 14 (
 rem Saturday Schedule
 if %hour% EQU 9 (
 	if %min% EQU 1	(
-		if %DOW% EQU 5 (
+		if %DOW% EQU 6 (
 		start "" /W "AACS_ILI.exe" %enroll% %pass% CS305_B
 		)
 	)
@@ -202,7 +202,7 @@ if %hour% EQU 9 (
 
 if %hour% EQU 10 (
 	if %min% EQU 31	(
-		if %DOW% EQU 5 (
+		if %DOW% EQU 6 (
 		start "" /W "AACS_ILI.exe" %enroll% %pass% CS309_A
 		)
 	)
@@ -210,7 +210,7 @@ if %hour% EQU 10 (
 
 if %hour% EQU 12 (
 	if %min% EQU 1	(
-		if %DOW% EQU 5 (
+		if %DOW% EQU 6 (
 		start "" /W "AACS_ILI.exe" %enroll% %pass% CS311_A
 		)
 	)
