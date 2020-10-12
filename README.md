@@ -15,6 +15,7 @@ My college uses Moodle CMS for its online educational platform so my friend sugg
 # Important
 This program uses left navigation bar of ILI to traverse the subjects. 
 It might be possible that some of the subject aren't visible to the left navigation bar so it won't be able to visit and mark attendence for those subject.
+A workaround for this problem is to pass the course link directly to the program :)
 Example shown as below where I have CS301_A but it doesn't shows on my navigation panel.
 
 ![N|Solid](https://i.imgur.com/OWgXyzdl.png)
