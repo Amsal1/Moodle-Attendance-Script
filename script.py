@@ -43,6 +43,7 @@ path = "chromedriver.exe"
 driver = webdriver.Chrome(path)
 driver.set_window_size(w, h)                                    #Don't set it to very smaller size or else some variables might not get detected
 
+
 t1=time.perf_counter()                                          #current-time
 end=0
 while end==0:
