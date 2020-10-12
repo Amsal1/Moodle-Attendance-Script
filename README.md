@@ -5,6 +5,8 @@ My college uses Moodle CMS for its online educational platform so my friend sugg
 1. Download and Install [Chrome](https://www.google.com/intl/en_in/chrome)
 2. Download and Install WebDriver for [Chrome](https://chromedriver.chromium.org/downloads)
 3. Download and Install [Python](https://www.python.org/downloads/)
+4. Install the required packages with using this command:
+```pip install -r requirements.txt```
 
 # How-To
 1. Edit and enter your username and password in script.py
