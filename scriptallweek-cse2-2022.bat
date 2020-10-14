@@ -96,7 +96,7 @@ rem Wednesday Schedule
  if %hour% EQU 9 (
  	if %min% EQU 1	(
  		if %DOW% EQU 3 (
- 		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% https://ilizone.iul.ac.in/course/view.php?id=3863
+ 		start "" /W "AACS_ILI.exe" %enroll% %pass% https://ilizone.iul.ac.in/course/view.php?id=3863
  		)
  	)
  )
@@ -162,7 +162,7 @@ rem Friday Schedule
  if %hour% EQU 9 (
  	if %min% EQU 1	(
  		if %DOW% EQU 5 (
- 		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% https://ilizone.iul.ac.in/course/view.php?id=3863
+ 		start "" /W "AACS_ILI.exe" %enroll% %pass% https://ilizone.iul.ac.in/course/view.php?id=3863
  		)
  	)
  )
