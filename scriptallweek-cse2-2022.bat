@@ -79,7 +79,7 @@ if %hour% EQU 12 (
 rem if %hour% EQU 14 (
 rem 	if %min% EQU 1	(
 rem 		if %DOW% EQU 2 (
-rem 		start "" /W "C:\Users\Administrator\Desktop\script\AACS_ILI.exe" %enroll% %pass% CS308_B
+rem 		start "" /W "AACS_ILI.exe" %enroll% %pass% CS308_B
 rem 		)
 rem )
 rem )
