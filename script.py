@@ -3,6 +3,7 @@ from selenium import webdriver
 from getpass import getpass
 import selenium.webdriver.support.ui as ui
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 import urllib
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -45,6 +46,8 @@ driver.set_window_size(w, h)                                    #Don't set it to
 
 
 t1=time.perf_counter()                                          #current-time
+driver.implicitly_wait(30)
+driver.set_page_load_timeout(500)
 end=0
 while end==0:
         try:
@@ -53,7 +56,6 @@ while end==0:
                 if t2-t1 > tmain:                               #comment this 'if' you don't need timeout for your works...
                         driver.quit()                           #
                         quit()                                  #
-                driver.implicitly_wait(20)
                 if not driver.find_elements_by_xpath("//span[@class='userbutton']"):    #For checking if logged in or not
                         username_textbox = driver.find_element_by_id("username")
                         username_textbox.send_keys(username)
@@ -77,6 +79,8 @@ while end==0:
                         driver.find_element_by_xpath("//input[@value='Save changes']").click()
                         end=1
         except NoSuchElementException:
+                end=0
+        except TimeoutException:
                 end=0
 driver.quit()
 quit()
