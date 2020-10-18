@@ -1,2 +1,2 @@
-selenium==3.141.0
-validator_collection==1.4.2
+selenium>=3.141.0
+validator_collection>=1.4.2
