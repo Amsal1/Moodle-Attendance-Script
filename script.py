@@ -4,6 +4,7 @@ from getpass import getpass
 import selenium.webdriver.support.ui as ui
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import WebDriverException
 import urllib
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -11,6 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 import sys
 import time
+from webdriver_manager.chrome import ChromeDriverManager
 
 from validator_collection import validators, checkers
 
@@ -40,13 +42,15 @@ else:
         username = input("Enter in your username: ")
         password = getpass("Enter your password: ")
         subject =  input("Enter 1 ILI Subject Code(eg. CS311_A,CS309_B..., make sure your enter exactly like mentioned in ILI) OR You can enter the link of course page: ")
-path = "chromedriver.exe"       
-driver = webdriver.Chrome(path)
+
+#path = "chromedriver.exe"
+     
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.set_window_size(w, h)                                    #Don't set it to very smaller size or else some variables might not get detected
 
 
 t1=time.perf_counter()                                          #current-time
-driver.implicitly_wait(30)
+driver.implicitly_wait(45)
 driver.set_page_load_timeout(500)
 end=0
 while end==0:
@@ -55,7 +59,7 @@ while end==0:
                 t2=time.perf_counter()                          #time-now
                 if t2-t1 > tmain:                               #comment this 'if' you don't need timeout for your works...
                         driver.quit()                           #
-                        quit()                                  #
+                        sys.exit()                              #
                 if not driver.find_elements_by_xpath("//span[@class='userbutton']"):    #For checking if logged in or not
                         username_textbox = driver.find_element_by_id("username")
                         username_textbox.send_keys(username)
@@ -82,5 +86,7 @@ while end==0:
                 end=0
         except TimeoutException:
                 end=0
+        except WebDriverException:
+                end=0
 driver.quit()
-quit()
+sys.exit()

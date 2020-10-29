@@ -3,18 +3,17 @@ My college uses Moodle CMS for its online educational platform so my friend sugg
 
 # [Latest Release For Windows 10/8.1/8](https://github.com/Amsal1/Moodle-Attendance-Script/releases/latest)
 
-# Requirements for Compiling
+# Requirements for Running Script.py
 1. Download and Install [Chrome](https://www.google.com/intl/en_in/chrome)
-2. Download and Install WebDriver for [Chrome](https://chromedriver.chromium.org/downloads)
-3. Download and Install [Python](https://www.python.org/downloads/)
-4. Install the required packages with using this command:
+2. Download and Install [Python3](https://www.python.org/downloads/)
+3. Install the required packages with using this command:
 ```pip install -r requirements.txt```
 
 # How-To
 1. Edit and enter your username and password in script.py
-2. Edit the Chrome webdriver path and save script.py
-3. Execute python script.py
-4. Enjoy :)
+2. Execute in terminal:
+```python script.py```
+3. Enjoy :)
 
 # Important
 This program uses left navigation bar of ILI to traverse the subjects. 
